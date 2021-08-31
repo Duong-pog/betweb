@@ -1,0 +1,45 @@
+.login-container{
+    height: 100vh;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-container .aside-right{
+    height: 100vh;
+    background-color: #ffffff;
+    width: 30%;
+    animation: fadeIn 1.5s;
+    opacity: 0.8;
+}
+
+.login-container .aside-right .header h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #615f5f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#login-form{
+    padding: 20px;
+}
+
+
+.login-container .aside-right .form-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes fadeIn {
+    from{ margin-top: -500px;
+        opacity: 0;
+
+    }
+    to{
+        margin-bottom: 0;
+        
+    }
+}

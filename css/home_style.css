@@ -1,0 +1,139 @@
+body{
+    background-image: url(../img/homepage-bg.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(22, 30, 39) ;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: sticky;
+}
+
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url(../img/homepage-bg.jpg);   
+ }
+.welcome{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    color: whitesmoke;
+    animation: fadeIn_welcome 4s;
+}
+@keyframes fadeIn_welcome{
+    from{
+        opacity: 0;
+        font-size: 60px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.introduction{
+    background-color: rgb(22, 30, 39);
+    margin: 0px -20px;
+    color: whitesmoke; 
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.about{
+    display: flex;
+    background-color:rgb(27,37,50);
+    margin: 0px -16px 0px -16px;
+    padding-left: 5px;
+    padding: 30px 0px;
+}
+.about_text{
+    width: 50%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+}
+.about_image{
+    width: 50%;
+}
+.login{
+    padding: 0px 350px;
+}
+.special{
+    background-color: rgb(138, 81, 81,0);
+    font-size: 40px; color: rgb(216, 0, 0); text-decoration: none;
+    transition: 600ms;
+    border-radius: 10px;
+}
+.special:hover{
+    color: white;
+    background-color:  rgb(36,191,255);
+    
+}
+.footer-basic-centered {
+    background-color: rgb(27,37,50);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+    padding: 15px;
+}
+
+.footer-basic-centered .footer-company-motto {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-company-name {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-links {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px 0 23px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-links1 a {
+    display: inline-block;
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+@media (max-width: 600px) {
+    .footer-basic-centered {
+        padding: 35px;
+    }
+    .footer-basic-centered .footer-company-motto {
+        font-size: 18px;
+    }
+    .footer-basic-centered .footer-company-name {
+        font-size: 12px;
+    }
+    .footer-basic-centered .footer-links {
+        font-size: 12px;
+        padding: 5px 0 20px;
+    }
+    .footer-links1 {
+        font-size: 14px;
+        padding: 5px 0 20px;
+    }
+    .footer-links1 a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+    }
+    .footer-basic-centered .footer-links a {
+        line-height: 1.8;
+    }
+}
+footer{
+    margin-left: 32px;
+}

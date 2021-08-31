@@ -1,0 +1,55 @@
+.register-container{
+    height: 100vh;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-container .aside-right{
+    height: 100vh;
+    background-color: #ffffff;
+    width: 30%;
+    animation: fadeIn 1.5s ;
+    opacity: 0.8;
+}
+
+.register-container .aside-right .header h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #615f5f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.register-container .input-name-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.register-container .input-name-wrapper .input-wrapper{
+    width: 48%;
+}
+
+
+#register-form{
+    padding: 20px;
+}
+
+
+.register-container .aside-right .form-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes fadeIn {
+    from{ margin-top: -500px;
+        opacity: 0;
+
+    }
+    to{
+        margin-bottom: 0;
+        opacity: 0.8;
+    }
+}
